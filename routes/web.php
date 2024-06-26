@@ -12,6 +12,8 @@ Route::get('/', function () {
 
 Route::get('test',[TestController::class,'index']);
 
+
+//route jurusan
 Route::get('jurusan',[JurusanController::class,'index'])->name('jurusan.index');
 Route::get('create-jurusan', [JurusanController::class,'create'])->name('jurusan.create');
 Route::post('jurusan-store',[JurusanController::class,'store'])->name('jurusan.store');
